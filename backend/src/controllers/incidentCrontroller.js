@@ -55,10 +55,11 @@ module.exports = {
     async delete(req, res) {
         
         //Id do incident que queremos deletar, Chega como route params
-        const { id } = req.params
+        const { id } = req.params;
 
         //"Token"
         const ong_id = req.headers.authorization
+        console.log(ong_id);
 
         //Select com where, busca um incident cadastrado pelo parametro
         //Caso o ong_id seja diferente da ong que quer excluir, iremos vetar

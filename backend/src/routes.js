@@ -22,7 +22,7 @@ const sessionController = require('./controllers/sessionController')
 
 routes.post('/session', sessionController.create)
 
-routes.get('/profile/:id', profileController.index)
+routes.get('/profile', profileController.index)
 
 routes.get('/ongs', ongController.index) //Listar as ongs
 routes.post('/ongs',  ongController.create) //Criar uma ong
